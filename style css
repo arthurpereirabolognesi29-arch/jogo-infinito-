@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(circle, #0f2027, #000000);
+  font-family: Arial, sans-serif;
+}
+
+/* Canvas ocupa a tela toda */
+canvas {
+  display: block;
+}
+
+/* HUD (pontuação e info) */
+#hud {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #00ffcc;
+  font-size: 18px;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+/* Botão mobile (pulo) */
+#jumpBtn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 255, 200, 0.2);
+  color: #00ffcc;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+/* efeito quando aperta */
+#jumpBtn:active {
+  transform: scale(0.9);
+  box-shadow: 0 0 25px #00ffcc;
+}
